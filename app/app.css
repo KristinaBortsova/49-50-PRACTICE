@@ -1,0 +1,47 @@
+/* Импорт шрифта Jost с разной насыщенностью */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+/* Импорт Tailwind CSS — утилитарного фреймворка */
+@import "tailwindcss";
+
+/* Глобальные стили для html и body */
+html,
+body {
+    /* Светло-розовый фон */
+    background-color: #fff0f5; /*нежный розовый */
+    /* Тёмно-розовый цвет текста */
+    color: #5e2a4a; /* розово-пурпурный оттенок */
+    /* Основной шрифт с запасными вариантами */
+    font-family:
+    "Jost",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    sans-serif;
+}
+
+/* Стили для тёмной темы — автоматически, если у пользователя включена тёмная тема */
+@media (prefers-color-scheme: dark) {
+    html,
+    body {
+    /* Указываем браузеру, что в тёмной теме используем цветовую схему dark */
+    color-scheme: dark;
+  }
+}
+
+/* Пользовательские CSS-переменные (токены) для использования в Tailwind и других местах */
+@theme {
+    /* Палитра светло-розовых оттенков */
+    --color-tom-thumb-50:  #fff5f8;  /* Самый светлый розовый */
+    --color-tom-thumb-100: #ffe4ed;  /* Нежно-розовый */
+    --color-tom-thumb-200: #ffc0d5;  /* Светло-розовый */
+    --color-tom-thumb-400: #ff80a5;  /* Яркий розовый*/
+    --color-tom-thumb-600: #d45b7a;  /* Средний розово-коралловый */
+    --color-tom-thumb-700: #b34365;  /* Тёмный розовый*/
+    --color-tom-thumb-800: #8e3450;  /* Ещё темнее розовый */
+    --color-tom-thumb-900: #6b2a40;  /* Глубокий бордово-розовый */
+    --color-tom-thumb-950: #3e1526;  /* Самый тёмный, почти винный */
+}

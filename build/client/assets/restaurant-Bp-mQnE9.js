@@ -1,0 +1,1 @@
+var e={name:`Quexty`,address:`Красный проспект, 17/1`,phone:`+7 (960) 790-88-99`,workHours:`Пн-Сб: 10:00 - 21:00`};export{e as t};
